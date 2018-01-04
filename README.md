@@ -2,8 +2,8 @@
 =====================================
 
 ## To Submit this Assignment
-- fork this repository
-- write all of your code in a directory named `lab-#`; + `<your name>` **e.g.** `lab08-amanda`
+- ~~fork this repository~~
+- ~~write all of your code in a directory named `lab-#`~~; + `<your name>` **e.g.** `lab08-amanda`
 - push to your repository
 - submit a pull request to this repository
 - submit a link to your PR in canvas
@@ -12,7 +12,7 @@
 ## Directions
 Provided is a JSON file that contains a data set of location information for properties in Manhatten.
 - Read in the file and answer the questions below
-- Use LINQ queries and Lambda statements (when appropriate) to find the answers. 
+- Use LINQ queries and Lambda statements (when appropriate) to find the answers.
 
 ## Setup
 - Add the data.json file to your solution root folder
@@ -20,9 +20,9 @@ Provided is a JSON file that contains a data set of location information for pro
 - Do some self research and find out how to read in JSON file (hint: JsonConvert.DeserializedOject is *part* of it)
 - You will need to break up each section of the JSON file up into different classes, use your resources - ask the TA's if your stuck. (Maybe find a converter of some sort??)
 - Review what the possible Extension Methosd are, and use them to answer the questions below?
-- 
+-
 #### Questions
-Each query builds off of the previous. 
+Each query builds off of the previous.
 1. Output all of the neighborhoods in this data list
 2. Filter out all the neighborhoods that do not have any names
 3. Remove the Duplicates
@@ -42,7 +42,7 @@ Your job is to
 
 This is ***your*** job. It's up to the module creator to prove that their work is a shining gem in the sea of slipshod modules. Since so many developers' eyes will find their way to your README before anything else, quality here is your public-facing measure of your work.
 
-<br /> <br /> Refer to the sample-README in the class repo for an example. 
+<br /> <br /> Refer to the sample-README in the class repo for an example.
 - [Reference](https://github.com/noffle/art-of-readme)
 
 ## Rubric
@@ -50,4 +50,3 @@ This is ***your*** job. It's up to the module creator to prove that their work i
 - 3pts: Code meets industry standards
 
 - **Readme.md required for submission. Missing readme document and tests will result in a best score of 2/10**
-
