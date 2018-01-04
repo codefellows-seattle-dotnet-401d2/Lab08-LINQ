@@ -1,0 +1,5 @@
+C:\Users\jeffmartinez\source\repos\Lab08-LINQ\Manhatten\XUnitTestProject1\bin\Debug\netcoreapp2.0\Manhatten.dll
+C:\Users\jeffmartinez\source\repos\Lab08-LINQ\Manhatten\XUnitTestProject1\obj\Debug\netcoreapp2.0\XUnitTestProject1.csprojResolveAssemblyReference.cache
+C:\Users\jeffmartinez\source\repos\Lab08-LINQ\Manhatten\XUnitTestProject1\obj\Debug\netcoreapp2.0\XUnitTestProject1.csproj.CoreCompileInputs.cache
+C:\Users\jeffmartinez\source\repos\Lab08-LINQ\Manhatten\XUnitTestProject1\obj\Debug\netcoreapp2.0\XUnitTestProject1.AssemblyInfoInputs.cache
+C:\Users\jeffmartinez\source\repos\Lab08-LINQ\Manhatten\XUnitTestProject1\obj\Debug\netcoreapp2.0\XUnitTestProject1.AssemblyInfo.cs
