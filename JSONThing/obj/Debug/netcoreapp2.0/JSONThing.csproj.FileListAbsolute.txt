@@ -1,0 +1,11 @@
+M:\OneDrive\Documents\Projects\Lab08-LINQ\JSONThing\obj\Debug\netcoreapp2.0\JSONThing.csprojResolveAssemblyReference.cache
+M:\OneDrive\Documents\Projects\Lab08-LINQ\JSONThing\obj\Debug\netcoreapp2.0\JSONThing.csproj.CoreCompileInputs.cache
+M:\OneDrive\Documents\Projects\Lab08-LINQ\JSONThing\obj\Debug\netcoreapp2.0\JSONThing.AssemblyInfoInputs.cache
+M:\OneDrive\Documents\Projects\Lab08-LINQ\JSONThing\obj\Debug\netcoreapp2.0\JSONThing.AssemblyInfo.cs
+M:\OneDrive\Documents\Projects\Lab08-LINQ\JSONThing\bin\Debug\netcoreapp2.0\JSONThing.deps.json
+M:\OneDrive\Documents\Projects\Lab08-LINQ\JSONThing\bin\Debug\netcoreapp2.0\JSONThing.runtimeconfig.json
+M:\OneDrive\Documents\Projects\Lab08-LINQ\JSONThing\bin\Debug\netcoreapp2.0\JSONThing.runtimeconfig.dev.json
+M:\OneDrive\Documents\Projects\Lab08-LINQ\JSONThing\bin\Debug\netcoreapp2.0\JSONThing.dll
+M:\OneDrive\Documents\Projects\Lab08-LINQ\JSONThing\bin\Debug\netcoreapp2.0\JSONThing.pdb
+M:\OneDrive\Documents\Projects\Lab08-LINQ\JSONThing\obj\Debug\netcoreapp2.0\JSONThing.dll
+M:\OneDrive\Documents\Projects\Lab08-LINQ\JSONThing\obj\Debug\netcoreapp2.0\JSONThing.pdb

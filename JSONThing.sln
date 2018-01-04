@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JSONThing", "JSONThing\JSONThing.csproj", "{19AB8697-5C25-4AE5-8FC6-2B7950386940}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestProject1", "XUnitTestProject1\XUnitTestProject1.csproj", "{F4531E9D-5ED6-4D17-ABA3-AE59B39E158F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19AB8697-5C25-4AE5-8FC6-2B7950386940}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19AB8697-5C25-4AE5-8FC6-2B7950386940}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19AB8697-5C25-4AE5-8FC6-2B7950386940}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19AB8697-5C25-4AE5-8FC6-2B7950386940}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4531E9D-5ED6-4D17-ABA3-AE59B39E158F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4531E9D-5ED6-4D17-ABA3-AE59B39E158F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4531E9D-5ED6-4D17-ABA3-AE59B39E158F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4531E9D-5ED6-4D17-ABA3-AE59B39E158F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9A81F8D5-BD50-44E9-8FBC-D66C8769006E}
+	EndGlobalSection
+EndGlobal
