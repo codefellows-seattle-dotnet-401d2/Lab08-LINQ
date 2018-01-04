@@ -2,37 +2,85 @@
 using System.Collections.Generic;
 using System.Text;
 using Newtonsoft.Json;
+using Xunit;
 
 namespace LINQ
 {
-    public class Geometry
+    public partial class LINQ
     {
+        [JsonProperty("features")]
+        public Feature[] Features { get; set; }
+
+        [JsonProperty("type")]
         public string Type { get; set; }
-        public List<double> Cordinates { get; set; }
     }
 
-    public class Properties
+    public partial class Feature
     {
-        public string Zip { get; set; }
-        public string Zity { get; set; }
-        public string State { get; set; }
-        public string Address { get; set; }
-        public string Borough { get; set; }
-        public string Neighborhood { get; set; }
-        public string County { get; set; }
-    }
-
-    public class Feature
-    {
-        public string Type { get; set; }
-        public Geometry Geometry { get; set; }
+        [JsonProperty("properties")]
         public Properties Properties { get; set; }
+
+        [JsonProperty("geometry")]
+        public Geometry Geometry { get; set; }
+
+        [JsonProperty("type")]
+        public string Type { get; set; }
     }
 
-    public class RootObject
+    public partial class Properties
     {
-        public string Type { get; set; }
-        public List<Feature> Features { get; set; }
+        [JsonProperty("county")]
+        public string County { get; set; }
+
+        [JsonProperty("borough")]
+        public string Borough { get; set; }
+
+        [JsonProperty("address")]
+        public string Address { get; set; }
+
+        [JsonProperty("city")]
+        public string City { get; set; }
+
+        [JsonProperty("state")]
+        public string State { get; set; }
+
+        [JsonProperty("neighborhood")]
+        public string Neighborhood { get; set; }
+
+        [JsonProperty("zip")]
+        public string Zip { get; set; }
+    }
+
+    public partial class Geometry
+    {
+        [JsonProperty("coordinates")]
+        public double[] Coordinates { get; set; }
+    }
+
+
+    public partial class LINQ
+    {
+        public static LINQ FromJson(string json)
+        {
+            return JsonConvert.DeserializeObject<LINQ>(json, Converter.Settings);
+        }
+    }
+
+    public static class Serialize
+    {
+        public static string ToJson(this LINQ self)
+        {
+            return JsonConvert.SerializeObject(self, Converter.Settings);
+        }
+    }
+
+    public class Converter
+    {
+        public static readonly JsonSerializerSettings Settings = new JsonSerializerSettings
+        {
+            MetadataPropertyHandling = MetadataPropertyHandling.Ignore,
+            DateParseHandling = DateParseHandling.None,
+        };
     }
 }
 
