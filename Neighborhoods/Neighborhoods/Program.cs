@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+using QuickType;
 
 namespace Neighborhoods
 {
@@ -7,6 +9,8 @@ namespace Neighborhoods
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+
+            var data = Data.FromJson(jsonString);
         }
     }
 }
