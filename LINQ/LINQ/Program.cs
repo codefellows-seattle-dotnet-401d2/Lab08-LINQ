@@ -11,7 +11,7 @@ class Program
     {
         //path
         string fileName = "data.json";
-        string path = Path.Combine(Environment.CurrentDirectory, @"data.json", fileName);
+        string path = Path.Combine(Environment.CurrentDirectory, fileName);
         string jsonData;
 
 
