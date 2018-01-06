@@ -1,0 +1,16 @@
+C:\Users\pedra\Documents\codefellows\401\Lab08-LINQ\Neighborhoods\XUnitTestNeighborhoods\bin\Debug\netcoreapp2.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\pedra\Documents\codefellows\401\Lab08-LINQ\Neighborhoods\XUnitTestNeighborhoods\bin\Debug\netcoreapp2.0\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\pedra\Documents\codefellows\401\Lab08-LINQ\Neighborhoods\XUnitTestNeighborhoods\bin\Debug\netcoreapp2.0\xunit.runner.utility.netcoreapp10.dll
+C:\Users\pedra\Documents\codefellows\401\Lab08-LINQ\Neighborhoods\XUnitTestNeighborhoods\bin\Debug\netcoreapp2.0\XUnitTestNeighborhoods.deps.json
+C:\Users\pedra\Documents\codefellows\401\Lab08-LINQ\Neighborhoods\XUnitTestNeighborhoods\bin\Debug\netcoreapp2.0\XUnitTestNeighborhoods.runtimeconfig.json
+C:\Users\pedra\Documents\codefellows\401\Lab08-LINQ\Neighborhoods\XUnitTestNeighborhoods\bin\Debug\netcoreapp2.0\XUnitTestNeighborhoods.runtimeconfig.dev.json
+C:\Users\pedra\Documents\codefellows\401\Lab08-LINQ\Neighborhoods\XUnitTestNeighborhoods\bin\Debug\netcoreapp2.0\XUnitTestNeighborhoods.dll
+C:\Users\pedra\Documents\codefellows\401\Lab08-LINQ\Neighborhoods\XUnitTestNeighborhoods\bin\Debug\netcoreapp2.0\XUnitTestNeighborhoods.pdb
+C:\Users\pedra\Documents\codefellows\401\Lab08-LINQ\Neighborhoods\XUnitTestNeighborhoods\bin\Debug\netcoreapp2.0\Neighborhoods.dll
+C:\Users\pedra\Documents\codefellows\401\Lab08-LINQ\Neighborhoods\XUnitTestNeighborhoods\bin\Debug\netcoreapp2.0\Neighborhoods.pdb
+C:\Users\pedra\Documents\codefellows\401\Lab08-LINQ\Neighborhoods\XUnitTestNeighborhoods\obj\Debug\netcoreapp2.0\XUnitTestNeighborhoods.csprojResolveAssemblyReference.cache
+C:\Users\pedra\Documents\codefellows\401\Lab08-LINQ\Neighborhoods\XUnitTestNeighborhoods\obj\Debug\netcoreapp2.0\XUnitTestNeighborhoods.csproj.CoreCompileInputs.cache
+C:\Users\pedra\Documents\codefellows\401\Lab08-LINQ\Neighborhoods\XUnitTestNeighborhoods\obj\Debug\netcoreapp2.0\XUnitTestNeighborhoods.AssemblyInfoInputs.cache
+C:\Users\pedra\Documents\codefellows\401\Lab08-LINQ\Neighborhoods\XUnitTestNeighborhoods\obj\Debug\netcoreapp2.0\XUnitTestNeighborhoods.AssemblyInfo.cs
+C:\Users\pedra\Documents\codefellows\401\Lab08-LINQ\Neighborhoods\XUnitTestNeighborhoods\obj\Debug\netcoreapp2.0\XUnitTestNeighborhoods.dll
+C:\Users\pedra\Documents\codefellows\401\Lab08-LINQ\Neighborhoods\XUnitTestNeighborhoods\obj\Debug\netcoreapp2.0\XUnitTestNeighborhoods.pdb

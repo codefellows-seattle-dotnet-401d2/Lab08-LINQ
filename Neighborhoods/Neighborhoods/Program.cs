@@ -1,6 +1,8 @@
 ﻿using System;
 using System.IO;
 using QuickType;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Neighborhoods
 {
@@ -8,9 +10,38 @@ namespace Neighborhoods
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string path = "data.json";
+            string jsonString = "";
+
+            try
+            {
+                using (StreamReader sr = new StreamReader(path))
+                {
+                    string s = "";
+                    while ((s = sr.ReadLine()) != null)
+                    {
+                        jsonString += s;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Failed reading file... " + e.Message);
+                throw;
+            }
 
             var data = Data.FromJson(jsonString);
+
+            // 1. Output all of the neighborhoods in this data list
+
+            IEnumerable<string> allNeighborhoods = data.Features.Select(n => n.Properties.Neighborhood);
+            foreach (string name in allNeighborhoods) Console.WriteLine(name);
+            Console.ReadLine();
+
+            // 2. Filter out all the neighborhoods that do not have any names
+            // 3. Remove the Duplicates
+            // 4. Rewrite the queries from above, and consolidate all into one single query.
+            // 5. Rewrite at least one of these questions only using a LINQ query (without lambda statement) 
         }
     }
 }

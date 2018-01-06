@@ -1,21 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿// ----- Taken from web app quicktype.io -----
+//
 // To parse this JSON data, add NuGet 'Newtonsoft.Json' then do:
 //
 //    using QuickType;
 //
 //    var data = Data.FromJson(jsonString);
 
+using System;
+using System.Text;
+using System.Net;
+using System.Collections.Generic;
+using Newtonsoft.Json;
+
 namespace QuickType
 {
-    using System;
-    using System.Net;
-    using System.Collections.Generic;
-
-    using Newtonsoft.Json;
-
     public partial class Data
     {
         [JsonProperty("type")]

@@ -6,3 +6,6 @@ C:\Users\pedra\Documents\codefellows\401\Lab08-LINQ\Neighborhoods\Neighborhoods\
 C:\Users\pedra\Documents\codefellows\401\Lab08-LINQ\Neighborhoods\Neighborhoods\obj\Debug\netcoreapp2.0\Neighborhoods.csproj.CoreCompileInputs.cache
 C:\Users\pedra\Documents\codefellows\401\Lab08-LINQ\Neighborhoods\Neighborhoods\obj\Debug\netcoreapp2.0\Neighborhoods.AssemblyInfoInputs.cache
 C:\Users\pedra\Documents\codefellows\401\Lab08-LINQ\Neighborhoods\Neighborhoods\obj\Debug\netcoreapp2.0\Neighborhoods.AssemblyInfo.cs
+C:\Users\pedra\Documents\codefellows\401\Lab08-LINQ\Neighborhoods\Neighborhoods\bin\Debug\netcoreapp2.0\Neighborhoods.pdb
+C:\Users\pedra\Documents\codefellows\401\Lab08-LINQ\Neighborhoods\Neighborhoods\obj\Debug\netcoreapp2.0\Neighborhoods.dll
+C:\Users\pedra\Documents\codefellows\401\Lab08-LINQ\Neighborhoods\Neighborhoods\obj\Debug\netcoreapp2.0\Neighborhoods.pdb
