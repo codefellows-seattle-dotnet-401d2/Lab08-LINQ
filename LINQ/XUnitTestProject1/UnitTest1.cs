@@ -4,26 +4,27 @@ using System.IO;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Linq;
+using LINQ;
 
 namespace XUnitTestProject1
 {
     public class UnitTest1
     {
-       
+        FeatureCollection Collection = LoadFeatures();
+
         [Fact]
-        public void Return_All_Neighborhoods_Not_Empty()
+        public void FeatureCollectionInstantiates()
         {
-            // Sort
-            StreamReader sr = new StreamReader("data.json");
-            string json = sr.ReadToEnd();
-            RootObject featuresCollection = JsonConvert.DeserializeObject<RootObject>(json);
-            JsonDeserializer jd = new JsonDeserializer();
-
-            // Act
-            var result = jd.GetAllNeighborhoods(featuresCollection);
-
-            // Assert
-            Assert.NotEmpty(result);
+            Assert.Equal(147, Collection.Features.Length);
         }
+
+        [Fact]
+        public void FeatureCollectionSize()
+        {
+            Assert.NotEqual(148, Collection.Features.Length);
+        }
+
+        public static FeatureCollection LoadFeatures() =>
+          JsonConvert.DeserializeObject<FeatureCollection>(File.ReadAllText("../../../../JSONThing/data.json"));
     }
 }

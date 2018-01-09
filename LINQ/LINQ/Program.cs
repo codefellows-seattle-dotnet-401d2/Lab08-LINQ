@@ -5,55 +5,80 @@ using System.Linq;
 
 namespace LINQ
 {
-class Program
-{
-    static void Main(string[] args)
+    class Program
     {
-        //path
-        string fileName = "data.json";
-        string path = Path.Combine(Environment.CurrentDirectory, fileName);
-        string jsonData;
-
-
-        //using stream reader to read json file
-        using (StreamReader sr = File.OpenText(path))
+        static void Main(string[] args)
         {
-            jsonData = File.ReadAllText(path);
-            Console.WriteLine(jsonData);
+            //path
+            string fileName = "data.json";
+            string path = Path.Combine(Environment.CurrentDirectory, fileName);
+            string jsonData;
+
+
+            //using stream reader to read json file
+            using (StreamReader sr = File.OpenText(path))
+            {
+                jsonData = File.ReadAllText(path);
+                Console.WriteLine(jsonData);
+                Console.ReadLine();
+                Console.Clear();
+            }
+
+            //Deserializing Json in this file
+            var data = FeatureCollection.FromJson(jsonData);
+
+            //return all neighborhoods
+            Console.WriteLine("all of the hoods in this data list.\n");
+            IEnumerable<string> rawData = data.Features.Select(n => n.Properties.Neighborhood);
+            foreach (string name in rawData)
+            {
+                Console.WriteLine(name);
+            }
+            Console.WriteLine("Press Enter to continue...\n");
             Console.ReadLine();
-            Console.Clear();
+
+            //Filter out all the neighborhoods that do not have any names
+            Console.WriteLine("Filtering ones that have blank spaces.\n");
+            IEnumerable<string> allHoodsWithNames = rawData.Where(n => n != "");
+            foreach (string name in allHoodsWithNames)
+            {
+                Console.WriteLine(name);
+            }
+            Console.WriteLine("Press Enter to continue...\n");
+            Console.ReadLine();
+
+            //Removing the Duplicates.
+            Console.WriteLine("Remove the Duplicates.\n");
+            IEnumerable<string> allUniqueHoods = allHoodsWithNames.Distinct().OrderBy(n => n);
+            foreach (string name in allUniqueHoods)
+            {
+                Console.WriteLine(name);
+            }
+            Console.WriteLine("Press Enter to continue...\n");
+            Console.ReadLine();
+
+            //Querie Rewrite.
+            Console.WriteLine("Querie Rewrite.\n");
+            IEnumerable<string> allHoodsMegaQuery = data.Features.Select(n => n.Properties.Neighborhood).Where(n => n != "").Distinct().OrderBy(n => n);
+            foreach (string name in allHoodsMegaQuery)
+            {
+                Console.WriteLine(name);
+            }
+            Console.WriteLine("Press Enter to continue...\n");
+            Console.ReadLine();
+
+            //Rewrite at least one of these questions only using a LINQ query 
+            Console.WriteLine("LINQ query.\n");
+            IEnumerable<string> allHoodsMegaQuery2 = (from n in data.Features
+                                                      where n.Properties.Neighborhood != ""
+                                                      orderby n.Properties.Neighborhood
+                                                      select n.Properties.Neighborhood).Distinct();
+            foreach (string name in allHoodsMegaQuery2)
+            {
+                Console.WriteLine(name);
+            }
+            Console.WriteLine("Press Enter to continue...\n");
+            Console.ReadLine();
         }
-
-        //Deserializing Json in this file
-        var data = LINQ.FromJson(jsonData);
-
-        //Returning all data, unfiltered, in json string format
-        IEnumerable<Feature> rawdata = from x in data.Features
-                                       where x.Properties.Neighborhood != null
-                                       select x;
-        foreach (var x in rawdata)
-        {
-            Console.WriteLine(x.Properties.Neighborhood);
-        }
-
-        Console.WriteLine();
-        Console.ReadLine();
-        Console.Clear();
-
-
-        //Filtering out neighborhoods that are blank or have no names
-        var noNameFilter = rawdata.Where(y => y.Properties.Neighborhood != "");
-        foreach (var x in noNameFilter)
-        {
-            Console.WriteLine(x.Properties.Neighborhood);
-        }
-
-        Console.WriteLine();
-        Console.ReadLine();
-        Console.Clear();
     }
-
-
 }
-}
-
